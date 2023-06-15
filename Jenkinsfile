@@ -3,11 +3,8 @@ pipeline {
 	agent none
   stages {
   	stage('Go Install') {
-    	agent {
-      	docker {
-        	image 'go:1.20.5-alpine'
-        }
-      }
+      tool name: 'docker_latest', type: 'dockerTool'
+      tool name: 'go_latest', type: 'go'
       steps {
       	sh 'go build'
       }
