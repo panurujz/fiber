@@ -22,19 +22,19 @@ pipeline {
 
         stage('docker install') {
             steps {
-            // One or more steps need to be included within the steps block.
+                echo 'install success.'
             }
         }
 
         stage('go build') {
             steps {
-            // One or more steps need to be included within the steps block.
+                echo 'go build success.'
             }
         }
 
         stage('docker build') {
             steps {
-            // One or more steps need to be included within the steps block.
+                echo 'docker build success.'
             }
         }
 
