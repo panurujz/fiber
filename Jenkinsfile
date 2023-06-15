@@ -3,7 +3,7 @@ pipeline {
 	agent any
 
     tools {
-        go 'go_latest'
+        go 'go_1.20.5'
     }
 
     stages {
