@@ -1,6 +1,6 @@
 #!groovy
 pipeline {
-	agent none
+	agent any
 
     tools {
         go 'go_latest'
