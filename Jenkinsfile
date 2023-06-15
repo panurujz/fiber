@@ -4,6 +4,7 @@ pipeline {
 
     tools {
         go 'go_1.20.5'
+        git 'Default'
     }
 
     stages {
